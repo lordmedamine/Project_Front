@@ -1,0 +1,172 @@
+/* Profile Container */
+.user-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the container takes up the full viewport height */
+  background-color: #f9f9f9; /* Light gray background */
+
+  /* User Profile Styling */
+  .user-profile {
+    background: linear-gradient(to bottom, #f7deb8, #ffffff 60%);
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Header Styling */
+  h1 {
+    color: #ff7f50; /* Orange Color */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Profile Image Section */
+  .profile-image {
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff7f50;
+  }
+
+  .default-avatar {
+    width: 120px;
+    height: 120px;
+    background-color: #ff7f50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+
+  /* Profile Details */
+  .profile-details {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .form-group p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-left: 1rem;
+  }
+
+  /* Toggle Button */
+  .toggle-password-reset {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff7f50; /* Orange */
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1.5rem;
+  }
+
+  .toggle-password-reset:hover {
+    background-color: #e66a2e; /* Slightly darker orange */
+  }
+
+  /* Password Reset Section */
+  .password-reset {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .password-reset h2 {
+    font-size: 1.8rem;
+    color: #ff7f50; /* Orange */
+    margin-bottom: 1rem;
+  }
+
+  .password-reset .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .password-reset label {
+    font-size: 1.1rem;
+    color: #555;
+  }
+
+  .password-reset input {
+    width: 550px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    margin-top: 0.5rem;
+  }
+
+  .password-reset input:focus {
+    border-color: #ff7f50; /* Orange Border on Focus */
+    outline: none;
+  }
+
+  .password-reset button {
+    padding: 1rem 2rem;
+    background-color: #ff7f50; /* Orange */
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .password-reset button:hover {
+    background-color: #e66a2e;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .user-profile {
+      padding: 1.5rem;
+    }
+
+    .form-group p {
+      margin-left: 0;
+    }
+
+    .profile-photo,
+    .default-avatar {
+      width: 100px;
+      height: 100px;
+    }
+
+    .toggle-password-reset,
+    .password-reset button {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+}

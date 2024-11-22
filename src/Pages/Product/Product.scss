@@ -1,0 +1,106 @@
+.products {
+  .products-page-hero {
+    height: 85vh;
+    background: linear-gradient(to right, #f7deb8, #ffffff, #f7deb8);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 2%;
+
+    h2 {
+      color: #090909;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+
+      &:hover {
+        color: #ff3c00; // Hover effect for color
+        transition: color 0.3s ease;
+      }
+    }
+
+    p {
+      color: #171717;
+      font-size: 48px;
+      font-weight: 700;
+      margin: 0;
+
+      &:hover {
+        color: #ff3c00; // Hover effect for color
+        transition: color 0.3s ease;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      color: #333333;
+
+      &:hover {
+        color: #ff3c00; // Hover effect for color
+        transition: color 0.3s ease;
+      }
+    }
+  }
+
+  .shop-category {
+    margin-top: 50px;
+
+    .shopcategory-indexSort {
+      display: flex;
+      margin: 0px 170px;
+      justify-content: space-between;
+      align-items: center;
+
+      .span {
+        font-weight: 600;
+      }
+    }
+
+    .shopcategory-sort {
+      padding: 10px 20px;
+      border-radius: 40px;
+      border: 1px solid #888;
+
+      button {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .shopcategory-products {
+      margin: 20px 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 50px;
+      column-gap: 10px;
+    }
+
+    .shopcategory-loadmore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px auto;
+
+      button {
+        width: 233px;
+        height: 69px;
+        border-radius: 75px;
+        background: #ffcb9b;
+        font-size: 18px;
+        font-weight: 500;
+        border-style: none;
+
+        &:hover {
+          font-size: 20px;
+          font-weight: 550;
+        }
+      }
+    }
+  }
+}

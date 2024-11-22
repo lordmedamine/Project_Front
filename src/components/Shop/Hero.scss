@@ -1,0 +1,154 @@
+.hero {
+  height: 85vh;
+  background: linear-gradient(180deg, #fde1ff, #f7deb8 60%);
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  width: 100%;
+
+  .hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 80px; /* Balanced padding */
+    line-height: 1.3;
+
+    h2 {
+      color: #090909;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      color: #171717;
+      font-size: 48px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .hero-hand-icon {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      img {
+        width: 80px;
+        height: auto;
+      }
+
+      span {
+        font-size: 16px;
+        color: #333333;
+      }
+    }
+
+    .hero-latest-btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 260px;
+      height: 60px;
+      font-size: 18px;
+      font-weight: 500;
+      background-color: transparent;
+      border: 2px solid #ff6600; // Orange outline
+      color: #ff6600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ee860f;
+        color: white;
+      }
+
+      &:active {
+        background-color: #c23333;
+      }
+    }
+  }
+
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      mask-image: linear-gradient(to bottom, black 80%, transparent);
+      -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+      max-width: 90%;
+      height: auto;
+    }
+  }
+}
+
+/* Responsive styles for medium and smaller screens */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+
+    .hero-left {
+      padding-left: 0;
+      text-align: center;
+      gap: 15px;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 36px;
+      }
+
+      .hero-hand-icon img {
+        width: 60px;
+      }
+
+      .hero-latest-btn {
+        width: 220px;
+        height: 50px;
+        font-size: 16px;
+      }
+    }
+
+    .hero-right {
+      margin-top: 20px;
+
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-left {
+    gap: 10px;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 28px;
+    }
+
+    .hero-hand-icon img {
+      width: 50px;
+    }
+
+    .hero-latest-btn {
+      width: 200px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+}

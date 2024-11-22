@@ -1,0 +1,130 @@
+.cart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background: #fef6e4; /* Light orange background for subtle design */
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff6700; /* Main orange color for headings */
+  }
+
+  .cart-items {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      border-bottom: 1px solid #ffd6a5; /* Subtle orange for dividers */
+      margin-bottom: 10px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+
+      .cart-item-details {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        h3 {
+          margin: 0;
+          font-size: 20px;
+          font-weight: bold;
+          color: #333;
+        }
+
+        p {
+          margin: 4px 0;
+          font-size: 14px;
+          color: #666;
+        }
+      }
+
+      .cart-item-actions {
+        display: flex;
+        align-items: center;
+
+        .quantity-btn {
+          width: 36px;
+          height: 36px;
+          font-size: 18px;
+          text-align: center;
+          margin: 0 5px;
+          cursor: pointer;
+          border: 1px solid #ff6700; /* Orange border */
+          border-radius: 50%;
+          background: #ffffff;
+          transition: background 0.3s ease, color 0.3s ease;
+
+          &:hover {
+            background: #ff6700;
+            color: #ffffff; /* White text on hover */
+          }
+        }
+
+        .remove-btn {
+          background: #ff4500; /* Bright orange-red for emphasis */
+          color: white;
+          border: none;
+          padding: 8px 12px;
+          cursor: pointer;
+          border-radius: 8px;
+          margin-left: 10px;
+          transition: background 0.3s ease, transform 0.2s ease;
+
+          &:hover {
+            background: #cc3700; /* Darker shade on hover */
+            transform: scale(1.05); /* Slight zoom for effect */
+          }
+        }
+      }
+    }
+  }
+
+  .cart-summary {
+    width: 100%;
+    max-width: 800px;
+    text-align: right;
+    font-size: 18px;
+    color: #333;
+
+    h3 {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #ff6700; /* Orange color for total */
+    }
+
+    .submit-order {
+      background: #ff6700; /* Primary orange button */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+        background: #e65c00; /* Slightly darker shade */
+        transform: scale(1.05); /* Slight zoom for interaction */
+      }
+    }
+  }
+
+  .cart-empty {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    margin-top: 20px;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,67 @@
+.item {
+  width: 280px; // Further reduced width
+  height: 400px; // Slightly reduced height
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // Space out children vertically
+  align-items: center; // Center align content horizontally
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  img {
+    height: 250px; // Adjusted image height to fit the new size
+    width: auto; // Maintain aspect ratio
+    transition: transform 0.4s ease;
+    mask-image: linear-gradient(to bottom, black 80%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+  }
+
+  .item-name {
+    font-size: 16px; // Smaller font size for a more compact card
+    font-weight: 700; // Bold for emphasis
+    color: #1f2937; // Darker shade for contrast
+    text-align: center;
+    text-transform: capitalize; // Ensure proper capitalization
+    margin: 6px 0;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+
+    &:hover {
+      color: #ff6f61; // Hover effect for color
+      transition: color 0.3s ease;
+    }
+  }
+
+  .item-prices {
+    margin-bottom: 8px;
+    width: 100%;
+    display: flex;
+    gap: 8px; // Reduced gap for tighter layout
+    margin-top: 5px;
+    justify-content: space-around;
+
+    .item-price-new {
+      color: #374151;
+      font-size: 16px; // Adjusted size for new price
+      font-weight: 600;
+    }
+
+    .item-price-old {
+      color: #8c8c8c;
+      font-size: 14px; // Smaller size for old price
+      font-weight: 500;
+      text-decoration: line-through;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    img {
+      transform: scale(1.15); // Slightly enlarge image on hover
+    }
+  }
+}

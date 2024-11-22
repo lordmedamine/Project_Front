@@ -1,0 +1,53 @@
+.Footer {
+  background: linear-gradient(180deg, #f7deb8, #ffffff 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 75%;
+  height: 60vh;
+  border-radius: 2%;
+
+  h1 {
+    color: #454545;
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 20px; // Add space below the heading
+  }
+
+  p {
+    color: #454545;
+    font-size: 20px;
+    margin-bottom: 30px; // Add space below the paragraph
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+    margin-top: 30px; // Add space above the input and button container
+
+    input {
+      width: 500px;
+      margin-left: 30px;
+      border: none;
+      outline: none;
+      color: #616161;
+      font-size: 16px;
+      background: transparent;
+    }
+
+    button {
+      width: 210px;
+      height: 70px;
+      border-radius: 80px;
+      background: black;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.itemslist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+  margin-top: 50px;
+  padding: 0 100px; // Add padding to move content away from edges
+  margin-bottom: 50px;
+
+  h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+  }
+
+  .items {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; // Enable wrapping for items
+    gap: 30px;
+    justify-content: center; // Center the rows
+    padding: 0 20px; // Additional padding specifically for the items container
+
+    .item {
+      flex: 1 1 calc(25% - 30px); // Make each item take up to 25% width minus the gap
+      max-width: calc(25% - 30px); // Prevent exceeding the width of 25%
+      box-sizing: border-box; // Include padding and borders in width
+    }
+  }
+}
